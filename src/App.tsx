@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Collection from './pages/Collection';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Newsletter from './components/Newsletter';
 import { AnimatePresence, motion } from 'motion/react';
 
 function ScrollToTop() {
@@ -78,6 +79,7 @@ export default function App() {
         <div className="flex-grow">
           <AnimatedRoutes />
         </div>
+        <Newsletter />
         <Footer />
       </div>
     </Router>

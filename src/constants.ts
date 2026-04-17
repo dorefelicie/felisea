@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sable Doré II',
     price: '120€',
     description: 'Une coupe minimaliste qui sublime les courbes. Texture nid d\'abeille pour un confort absolu.',
-    image: '/image/maillot2.webp',
+    image: '/image/maillot5.jpg',
     category: 'bikini'
   },
   {
