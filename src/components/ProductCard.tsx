@@ -36,7 +36,9 @@ export default function ProductCard({ product, index }: ProductCardProps) {
         <div>
           <h3 className="text-xl font-serif italic mb-1">{product.name}</h3>
           <p className="text-[10px] uppercase tracking-widest text-solar font-medium">
-            {product.category === 'bikini' ? 'Ensemble Bikini' : 'Maillot Une Pièce'}
+            {product.category === 'bikini' ? 'Ensemble Bikini' : 
+             product.category === 'one-piece' ? 'Maillot Une Pièce' : 
+             'Bijou de Corps'}
           </p>
         </div>
         <span className="text-sm font-light">{product.price}</span>

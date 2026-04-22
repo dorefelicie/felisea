@@ -64,5 +64,29 @@ export const PRODUCTS: Product[] = [
     description: 'Une coupe asymétrique audacieuse. Conçu en matières recyclées pour un respect total de l\'océan.',
     image: '/image/maillot1piece2.jpg',
     category: 'one-piece'
+  },
+  {
+    id: '9',
+    name: 'Chaîne de Ventre Orion',
+    price: '45€',
+    description: 'Une maille fine dorée à l\'or fin, ornée de nacre véritable. Le détail qui sublime le bronzage.',
+    image: '/image/chaine_de_ventre.jpg',
+    category: 'jewelry'
+  },
+  {
+    id: '10',
+    name: 'Bijou de Corps Luna',
+    price: '55€',
+    description: 'Double rangée de perles d\'eau douce pour une silhouette bohème et raffinée.',
+    image: '/image/chaine_de_corps.jpg',
+    category: 'jewelry'
+  },
+  {
+    id: '11',
+    name: 'Bracelet de Cheville Eos',
+    price: '30€',
+    description: 'Un éclat discret sur la cheville, inspiré par les reflets de l\'aube sur le sable.',
+    image: '/image/chaine_de_cheville.jpg',
+    category: 'jewelry'
   }
 ];

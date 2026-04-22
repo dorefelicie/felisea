@@ -77,7 +77,7 @@ export default function Home() {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-t-[200px] shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop" 
+                src="/image/image_remplacement.jpg" 
                 alt="Natural texture"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -137,6 +137,53 @@ export default function Home() {
               <ProductCard key={product.id} product={product} index={index} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Body Jewelry Section */}
+      <section className="py-24 md:py-32 px-6 md:px-12 bg-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2 }}
+            className="order-2 md:order-1"
+          >
+            <span className="text-[10px] uppercase tracking-[0.3em] text-solar font-bold mb-4 block">Accessoires</span>
+            <h2 className="text-4xl md:text-5xl font-serif italic mb-8 leading-tight">
+              L'éclat de l'or sur<br />une peau dorée.
+            </h2>
+            <p className="text-solar text-lg font-serif leading-relaxed mb-10 italic">
+              Nos chaînes de corps et bijoux de ventre sont conçus pour sublimer vos courbes avec délicatesse. Des pièces pensées pour briller sous le soleil d'Ibiza, de la plage aux soirées étoilées.
+            </p>
+            <Link 
+              to="/collection?category=jewelry"
+              className="inline-block border border-solar text-solar px-8 py-3 text-[10px] uppercase tracking-[0.2em] hover:bg-solar hover:text-white transition-all duration-500"
+            >
+              Voir les bijoux
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1.05 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            className="order-1 md:order-2 relative"
+          >
+            <div className="aspect-[3/4] overflow-hidden rounded-full border border-solar/10 p-4">
+              <img 
+                src="/image/chaine_de_ventre.jpg" 
+                alt="Body Jewelry Detail"
+                className="w-full h-full object-cover rounded-full"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            {/* Artistic circles */}
+            <div className="absolute -top-10 -left-10 w-32 h-32 border border-solar/20 rounded-full animate-pulse" />
+            <div className="absolute bottom-10 -right-5 w-20 h-20 bg-sand/30 rounded-full blur-xl" />
+          </motion.div>
         </div>
       </section>
 
